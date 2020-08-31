@@ -20,13 +20,20 @@ The main program accepts a screenshot of the board, converts that input into a l
 ## How to
 The source code can be installed on your iPhone in one of three ways:
 
-1. It can be cloned directly to your iPhone using Pythonista and [StaSh](https://github.com/ywangd/stash). 
+1. It can be cloned directly to your iPhone using Pythonista and [StaSh](https://github.com/ywangd/stash) (`git clone` only works when running using Python 2.7). 
 2. It can be uploaded to your iCloud and imported into Pythonista
 3. It can be downloaded to your computer and sent to your phone via email or Airdrop
 
-You will need StaSh installed regardless to install the requirements (`pip install -r requirements.txt`)
+You will need StaSh installed regardless to install the requirements. Unfortunately StaSh does not support the `-r` flag of `pip install`, so they have to be installed one-by-one (`Pillow` and `numpy` are installed with Pythonista, so you will just need `dlx`).
 
-Once imported, configure it to be part of the share sheet via Pythonista's settings, then follow the steps in the demo above.
+Once imported, configure it to be part of the share sheet via the following steps:
+
+- Settings > Share Extension Shortcuts
+- Click "+"
+- Select `sudoku-solver/main.py` as the entry point
+- Click "Add"
+
+Once set up, follow the steps in the demo above to run it!
 
 ### Limitations
 This program _only_ works with Pythonista, as it uses a Pythonista-specific module (`appex`) to get the input image. Additionally, it has only been tested on an iPhone XR running iOS 13.6.1 and Pythonista 3.3
