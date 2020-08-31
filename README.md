@@ -20,7 +20,7 @@ The main program accepts a screenshot of the board, converts that input into a l
 ## How to
 The source code can be installed on your iPhone in one of three ways:
 
-1. It can be cloned directly to your iPhone using Pythonista and [StaSh](https://github.com/ywangd/stash) (`git clone` only works when running using Python 2.7). 
+1. It can be cloned directly to your iPhone using Pythonista and [StaSh](https://github.com/ywangd/stash) (`git clone` only works when running using Python 2.7<sup>*</sup>). 
 2. It can be uploaded to your iCloud and imported into Pythonista
 3. It can be downloaded to your computer and sent to your phone via email or Airdrop
 
@@ -34,6 +34,8 @@ Once imported, configure it to be part of the share sheet via the following step
 - Click "Add"
 
 Once set up, follow the steps in the demo above to run it!
+
+<sup>*</sup>The main project runs using Pythonista's Python 3.6 interpreter, but StaSh's git functionality only works using the 2.7 interpreter
 
 ### Limitations
 This program _only_ works with Pythonista, as it uses a Pythonista-specific module (`appex`) to get the input image. Additionally, it has only been tested on an iPhone XR running iOS 13.6.1 and Pythonista 3.3
