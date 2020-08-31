@@ -1,0 +1,3 @@
+Pillow
+dlx
+numpy  # Only for average image generation
