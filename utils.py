@@ -48,7 +48,7 @@ def get_board(image, clean_up=True):
     :param clean_up: Whether or not to remove temp files (default = True)
     :type clean_up: bool
 
-    :return: A tiple containing the image-based board and the Python interpretation
+    :return: A tuple containing the image-based board and the Python interpretation
     :rtype: tuple[PIL.Image, list[list[int]]]
     """
     os.makedirs("tmp", exist_ok=True)
